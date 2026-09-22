@@ -29,7 +29,87 @@ To create an **abstract class** named `Shape` with an **abstract method** `calcu
 ---
 
 ## 💻 Program
+```
+from abc import ABC, abstractmethod
+import math
 
+class Shape(ABC):
+
+    @abstractmethod
+    def calculate_area(self):
+        pass
+
+
+class Rectangle(Shape):
+    def __init__(self, length, breadth):
+        self.length = length
+        self.breadth = breadth
+
+    def calculate_area(self):
+        return self.length * self.breadth
+
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def calculate_area(self):
+        return math.pi * self.radius * self.radius
+
+
+r = Rectangle(10, 5)
+c = Circle(7)
+
+print("Area of Rectangle:", r.calculate_area())
+print("Area of Circle:", c.calculate_area())
+```
 ## Output
-
+Area of Rectangle: 50
+Area of Circle: 153.93804002589985
 ## Result
+### Python Program
+
+```python
+from abc import ABC, abstractmethod
+import math
+
+class Shape(ABC):
+
+    @abstractmethod
+    def calculate_area(self):
+        pass
+
+
+class Rectangle(Shape):
+    def __init__(self, length, breadth):
+        self.length = length
+        self.breadth = breadth
+
+    def calculate_area(self):
+        return self.length * self.breadth
+
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def calculate_area(self):
+        return math.pi * self.radius * self.radius
+
+
+r = Rectangle(10, 5)
+c = Circle(7)
+
+print("Area of Rectangle:", r.calculate_area())
+print("Area of Circle:", c.calculate_area())
+```
+
+### Output
+
+```text
+Area of Rectangle: 50
+Area of Circle: 153.93804002589985
+```
+
+**Result:**
+Thus, the Python program to create an abstract class `Shape` and implement the `calculate_area` method in `Rectangle` and `Circle` subclasses was successfully executed.
