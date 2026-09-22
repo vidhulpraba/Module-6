@@ -23,7 +23,45 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 ---
 
 ## 💻 Program
+```
+class Rectangle:
+    def __init__(self, length, breadth):
+        self.__length = length
+        self.__breadth = breadth
 
+    def area(self):
+        return self.__length * self.__breadth
+
+
+r = Rectangle(10, 5)
+
+print("Area of Rectangle:", r.area())
+```
 ## Output
-
+Area of Rectangle: 50
 ## Result
+### Python Program
+
+```python
+class Rectangle:
+    def __init__(self, length, breadth):
+        self.__length = length
+        self.__breadth = breadth
+
+    def area(self):
+        return self.__length * self.__breadth
+
+
+r = Rectangle(10, 5)
+
+print("Area of Rectangle:", r.area())
+```
+
+### Output
+
+```text
+Area of Rectangle: 50
+```
+
+**Result:**
+Thus, the Python program to implement **Encapsulation** using private member variables `__length` and `__breadth` was successfully executed.
