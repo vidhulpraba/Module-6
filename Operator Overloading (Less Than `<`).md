@@ -25,7 +25,51 @@ To write a Python program that demonstrates **operator overloading** by overload
 ---
 
 ## 💻 Program
+```
+class Number:
+    def __init__(self, value):
+        self.value = value
 
+    def __lt__(self, other):
+        return self.value < other.value
+
+
+a = Number(10)
+b = Number(20)
+
+if a < b:
+    print("a is less than b")
+else:
+    print("a is not less than b")
+```
 ## Output
-
+a is less than b
 ## Result
+### Python Program
+
+```python
+class Number:
+    def __init__(self, value):
+        self.value = value
+
+    def __lt__(self, other):
+        return self.value < other.value
+
+
+a = Number(10)
+b = Number(20)
+
+if a < b:
+    print("a is less than b")
+else:
+    print("a is not less than b")
+```
+
+### Output
+
+```text
+a is less than b
+```
+
+**Result:**
+Thus, the Python program to demonstrate **operator overloading** by overloading the less than (`<`) operator was successfully executed.
