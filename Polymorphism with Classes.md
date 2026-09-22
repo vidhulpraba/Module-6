@@ -26,7 +26,79 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
+```
+class Beans:
+    def type(self):
+        return "Vegetable"
 
+    def color(self):
+        return "Green"
+
+
+class Mango:
+    def type(self):
+        return "Fruit"
+
+    def color(self):
+        return "Yellow"
+
+
+def display(obj):
+    print("Type:", obj.type())
+    print("Color:", obj.color())
+
+
+b = Beans()
+m = Mango()
+
+display(b)
+display(m)
+```
 ## Output
-
+Type: Vegetable
+Color: Green
+Type: Fruit
+Color: Yellow
 ## Result
+### Python Program
+
+```python
+class Beans:
+    def type(self):
+        return "Vegetable"
+
+    def color(self):
+        return "Green"
+
+
+class Mango:
+    def type(self):
+        return "Fruit"
+
+    def color(self):
+        return "Yellow"
+
+
+def display(obj):
+    print("Type:", obj.type())
+    print("Color:", obj.color())
+
+
+b = Beans()
+m = Mango()
+
+display(b)
+display(m)
+```
+
+### Output
+
+```text
+Type: Vegetable
+Color: Green
+Type: Fruit
+Color: Yellow
+```
+
+**Result:**
+Thus, the Python program to demonstrate **polymorphism** using the `Beans` and `Mango` classes and a generic function was successfully executed.
